@@ -290,9 +290,9 @@ oat2dex_repair() {
       rm "$TMP_WORK_DIR/classes.dex"
 
       # Remove old signature from APKs so that we don't create problems with V2 sign format
-      if [[ "$fileExt" == "apk" ]]; then
-        zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
-      fi
+      # if [[ "$fileExt" == "apk" ]]; then
+      #   zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
+      # fi
 
       cp "$TMP_WORK_DIR/$fileName" "$OUTPUT_SYS/$relDir"
     fi
@@ -459,9 +459,9 @@ oatdump_repair() {
       rm "$TMP_WORK_DIR/classes.dex"
 
       # Remove old signature from APKs so that we don't create problems with V2 sign format
-      if [[ "$fileExt" == "apk" ]]; then
-        zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
-      fi
+      # if [[ "$fileExt" == "apk" ]]; then
+      #   zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
+      # fi
 
       mv "$TMP_WORK_DIR/$fileName" "$OUTPUT_SYS/$relDir"
     fi
@@ -624,10 +624,10 @@ smali_repair() {
         rm "$dexFile"
       done
 
-      # Remove old signature from APKs so that we don't create problems with V2 sign format
-      if [[ "$fileExt" == "apk" ]]; then
-        zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
-      fi
+      # # Remove old signature from APKs so that we don't create problems with V2 sign format
+      # if [[ "$fileExt" == "apk" ]]; then
+      #   zip -d "$TMP_WORK_DIR/$fileName" META-INF/\* &>/dev/null
+      # fi
 
       cp "$TMP_WORK_DIR/$fileName" "$OUTPUT_SYS/$relDir"
     fi
