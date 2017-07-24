@@ -19,3 +19,6 @@ system/priv-app/DMService/DMService.apk
 system/priv-app/DiagMon/DiagMon.apk
 system/priv-app/LifeTimerService/LifeTimerService.apk
 system/priv-app/SprintDM/SprintDM.apk
+
+#GApps
+system/priv-app/HotwordEnrollment/HotwordEnrollment.apk::PRESIGNED

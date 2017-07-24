@@ -23,3 +23,6 @@ system/priv-app/LifeTimerService/LifeTimerService.apk
 system/priv-app/SprintDM/SprintDM.apk
 system/priv-app/atfwd/atfwd.apk
 system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+#GApps
+system/priv-app/HotwordEnrollment/HotwordEnrollment.apk::PRESIGNED
